@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!-- saved from url=(0062)file:///C:/Users/user/Desktop/DOMjavascript/web/calciii22.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: aqua;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: xx-large;
+            background-image: radial-gradient(lightpink,white);
+        }
+        #main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid rgb(249, 195, 195);
+            height: 381px;
+            width: 347px;
+            background-color: rgb(79, 54, 54);
+            box-shadow: 2px 2px 30px rgb(5, 162, 219);
+            border-radius: 10px;
+        }
+        #valu>input{
+            height: 40px;
+            width: 70px;
+            border-radius: 10px;
+            background-color: rgb(77, 71, 71);
+            color: white;
+        }
+        #one>input{
+            height: 40px;
+            width: 70px;
+            border-radius: 10px;
+            background-color: rgb(77, 71, 71);
+            color: white;
+        }
+        #two>input{
+            height: 40px;
+            width: 70px;
+            border-radius: 10px;
+            background-color: rgb(77, 71, 71);
+            color: white;
+        }
+        #three>input{
+            height: 40px;
+            width: 70px;
+            border-radius: 10px;
+            background-color: rgb(77, 71, 71);
+            color: white;
+        }
+        #four>input{
+            height: 40px;
+            width: 70px;
+            border-radius: 10px;
+            background-color: rgb(77, 71, 71);
+            color: aliceblue;
+        }
+        input{
+            height: 80px;
+            width: 300px;
+            font-style: italic; 
+        }
+        
+     
+
+    </style>
+</head>
+<body>
+    <div id="main">
+        <form action="file:///C:/Users/user/Desktop/DOMjavascript/web/calciii22.html">
+            <div id="dipaly">
+                <input type="text" name="display" style="font-size: x-large;">
+            </div>
+            <div id="valu">
+                <input type="button" value="AC" onclick="display.value=&#39; &#39;">
+                <input type="button" value="DEL" onclick="display.value=display.value.toString().slice(0,-1)">
+                <input type="button" value="%" onclick="display.value+=&#39;%&#39;">
+                <input type="button" value="/" onclick="display.value+=&#39;/&#39;">
+            </div>
+            <div id="one">
+                <input type="button" value="7" onclick="display.value+=&#39;7&#39;">
+                <input type="button" value="8" onclick="display.value+=&#39;8&#39;">
+                <input type="button" value="9" onclick="display.value+=&#39;9&#39;">
+                <input type="button" value="*" onclick="display.value+=&#39;*&#39;">
+            </div>
+            <div id="two">
+                <input type="button" value="4" onclick="display.value+=&#39;4&#39;">
+                <input type="button" value="5" onclick="display.value+=&#39;5&#39;">
+                <input type="button" value="6" onclick="display.value+=&#39;6&#39;">
+                <input type="button" value="-" onclick="display.value+=&#39;-&#39;">
+            </div>
+            <div id="three">
+                <input type="button" value="1" onclick="display.value+=&#39;1&#39;">
+                <input type="button" value="2" onclick="display.value+=&#39;2&#39;">
+                <input type="button" value="3" onclick="display.value+=&#39;3&#39;">
+                <input type="button" value="+" onclick="display.value+=&#39;+&#39;">
+            </div>
+            <div id="four">
+                <input type="button" value="00" onclick="display.value+=&#39;00&#39;">
+                <input type="button" value="0" onclick="display.value+=&#39;0&#39;">
+                <input type="button" value="." onclick="display.value+=&#39;.&#39;">
+               <input type="button" value="=" onclick="display.value=eval(display.value)">
+            </div>
+        </form>
+    </div>
+
+</body></html>
